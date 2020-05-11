@@ -298,6 +298,7 @@ public class Home extends AppCompatActivity {
                                 TextView price=paper_card.findViewById(R.id.price);
                                 title.setText(paper.child("title").getValue(String.class));
                                 subtitle.setText(paper.child("subtitle").getValue(String.class));
+
                                 price.setText("Solved");
                                 paper_card.setOnClickListener(new View.OnClickListener() {
                                     @Override

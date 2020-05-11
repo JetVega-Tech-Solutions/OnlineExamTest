@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaperWebView">
+
+    <WebView
+        android:id="@+id/paper_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="30dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true">
+        <ProgressBar
+            android:id="@+id/timerpb"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:scaleY="8"
+            android:progressTint="@color/colorPrimary"
+            android:background="#aa3F51B5"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:progress="0"/>
+        <TextView
+            android:id="@+id/timertv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:text="00:00"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/loadingpaperlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/loadingillustration"/>
+        <TextView
+            android:id="@+id/loadingTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_marginBottom="10dp"
+            android:layout_above="@id/pb"
+            android:text="Fetching Paper"/>
+        <ProgressBar
+            android:id="@+id/pb"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>

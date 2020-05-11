@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PaperParser">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="8dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/paper_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_margin="10dp"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/paper_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginStart="15dp"
+                android:textColor="#333333"
+                android:text=""
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="5dp"
+                android:text=""
+                android:textColor="#43BE31"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/exam_paper_icon"
+            android:layout_gravity="right|bottom"/>
+    </android.support.v7.widget.CardView>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+    <android.support.v7.widget.CardView
+        android:id="@+id/timercard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="25dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/min"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:inputType="numberDecimal"
+                android:background="@color/colorPrimary"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:text="02"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="28sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:text=":"/>
+            <EditText
+                android:id="@+id/sec"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:inputType="numberDecimal"
+                android:background="@color/colorPrimary"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:text="00"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:padding="5dp"
+        android:background="#000000"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:onClick="startExam"
+        android:text="Start"/>
+</RelativeLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You can set your own timing criteria for the test. \nEnter Time (min : sec) and click start button."
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            />
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

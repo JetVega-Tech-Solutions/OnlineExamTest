@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Online Exam Test</string>
+    <string name="web_client_id">188664607699-e1en3olo51vpt0gu46uppl88bv6omecb.apps.googleusercontent.com</string>
+    <string name="web_client_secret">PmJ-b0zqzvopMkQlTAFMpfAg</string>
+    <string name="title_activity_home">Home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="tab_text_1">Home</string>
+    <string name="tab_text_2">Papers</string>
+    <string name="tab_text_3">Play &amp; Earn</string>
+    <string name="sendmessagewhtsap">Thanks for choosing us,\n\n Please contact us on whatsapp to buy this test paper.</string>
+    <string name="type_a_message">Type a message</string>
+</resources>

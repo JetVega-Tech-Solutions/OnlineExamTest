@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="5dp"
+        >
+
+    <ImageView
+        android:visibility="invisible"
+        android:id="@+id/first_icon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/first"/>
+    <ImageView
+        android:visibility="invisible"
+        android:id="@+id/second_icon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/second"/>
+    <ImageView
+        android:visibility="invisible"
+        android:id="@+id/third_icon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/third"
+        android:layout_centerVertical="true" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="80dp">
+            <TextView
+                android:id="@+id/display_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amol Barge"
+                android:textSize="22sp"
+                android:textColor="#000000"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/display_name"
+                android:text="Time: 1:30"
+                android:layout_marginTop="5dp"
+                android:textSize="18sp"
+                android:textColor="@color/greenAccent"
+                android:layout_toRightOf="@id/score"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/display_name"
+                android:text="Score: 30"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:textSize="18sp"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                 />
+        </RelativeLayout>
+    </RelativeLayout>

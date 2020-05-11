@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/c_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sample Test Competition"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"/>
+            <TextView
+                android:id="@+id/c_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/c_title"
+                android:textStyle="bold"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp"
+                android:text="Starts 12-02-2020T01:30
+Ends 13-02-2020T02:30"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                />
+
+            <RelativeLayout
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:background="@drawable/timer_bg"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="5dp"
+                >
+
+                <TextView
+                    android:id="@+id/c_timer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:text="Starts in 10 : 42 : 30"
+                    android:textColor="#43BE31"
+                    android:gravity="center"
+                    android:textSize="18sp"/>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/c_ill"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
